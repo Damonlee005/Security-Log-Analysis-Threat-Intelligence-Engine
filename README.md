@@ -82,3 +82,13 @@ validate that detection logic works before pointing it at real systems.
 ---
 
 ## Project Structure
+Security-Log-Analysis-Threat-Intelligence-Engine/
+├── logs/
+├── scripts/
+│   ├── log_generator.py
+│   ├── analyzer.py
+│   └── report_generator.py
+├── reports/
+│   └── threat_report.html
+├── screenshots/
+└── requirements.txt
