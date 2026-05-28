@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Threat Intelligence Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; color: #212121; }
+        .header { background: #1a1a2e; color: white; padding: 30px; border-radius: 8px; margin-bottom: 24px; }
+        .header h1 { margin: 0 0 8px 0; font-size: 24px; }
+        .header p { margin: 0; opacity: 0.7; font-size: 13px; }
+        .severity-badge { display: inline-block; background: #C62828; color: white; padding: 6px 16px; border-radius: 4px; font-weight: bold; font-size: 14px; margin-top: 12px; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+        .card h3 { margin: 0 0 4px 0; font-size: 13px; color: #757575; text-transform: uppercase; }
+        .card .value { font-size: 32px; font-weight: bold; color: #1a1a2e; }
+        .card .value.red { color: #C62828; }
+        .section { background: white; padding: 24px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); margin-bottom: 24px; }
+        .section h2 { margin: 0 0 16px 0; font-size: 16px; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #1a1a2e; color: white; padding: 10px 12px; text-align: left; font-size: 13px; }
+        td { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; font-size: 13px; }
+        tr:hover td { background: #f5f5f5; }
+        .assessment { background: #f8f9fa; padding: 20px; border-left: 4px solid #1565C0; border-radius: 4px; line-height: 1.7; font-size: 14px; }
+        .flag-true { color: #C62828; font-weight: bold; }
+        .flag-false { color: #2E7D32; font-weight: bold; }
+        .footer { text-align: center; color: #9e9e9e; font-size: 12px; margin-top: 24px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Security Threat Intelligence Report</h1>
+        <p>Generated: May 27, 2026 at 09:54 PM | AI-Driven Security Log Analysis Engine</p>
+        <div class="severity-badge">Risk Level: CRITICAL</div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Total Events Analyzed</h3>
+            <div class="value">72</div>
+        </div>
+        <div class="card">
+            <h3>Critical Events</h3>
+            <div class="value red">24</div>
+        </div>
+        <div class="card">
+            <h3>Failed Login Attempts</h3>
+            <div class="value red">42</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Detection Summary</h2>
+        <table>
+            <tr><th>Indicator</th><th>Status</th></tr>
+            <tr><td>Brute Force Attack</td><td class="flag-true">DETECTED</td></tr>
+            <tr><td>Privilege Escalation Attempt</td><td class="flag-true">DETECTED</td></tr>
+            <tr><td>Suspicious Process Execution</td><td class="flag-true">DETECTED</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Event Type Breakdown</h2>
+        <table>
+            <tr><th>Event Type</th><th>Count</th></tr>
+            <tr><td>Ssh Failed Login</td><td>42</td></tr><tr><td>Ssh Successful Login</td><td>8</td></tr><tr><td>Sudo</td><td>12</td></tr><tr><td>Process Execution</td><td>6</td></tr><tr><td>Privilege Escalation</td><td>4</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Top Source IPs by Activity</h2>
+        <table>
+            <tr><th>IP Address</th><th>Event Count</th><th>Classification</th></tr>
+            <tr><td>45.33.32.156</td><td>23</td><td style="color:#C62828;font-weight:bold">Suspicious</td></tr><tr><td>192.168.1.15</td><td>13</td><td style="color:#1565C0;font-weight:bold">Internal</td></tr><tr><td>89.248.165.64</td><td>11</td><td style="color:#C62828;font-weight:bold">Suspicious</td></tr><tr><td>198.20.69.74</td><td>10</td><td style="color:#C62828;font-weight:bold">Suspicious</td></tr><tr><td>185.220.101.45</td><td>8</td><td style="color:#C62828;font-weight:bold">Suspicious</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>AI-Generated Threat Assessment</h2>
+        <div class="assessment">The overall risk level is high due to the large number of critical events and failed SSH logins detected over the analysis period. With 24 critical events and 42 failed SSH logins out of 72 total security events, it is clear that the system is under significant attack. The fact that brute force detection and privilege escalation attempts were also flagged further underscores the severity of the threat.<br><br>The most concerning findings are the high number of failed SSH logins, which suggests that an attacker is actively trying to gain access to the system using automated tools. The presence of privilege escalation attempts and suspicious process execution also implies that if the attacker is successful in gaining initial access, they will likely try to move laterally and exploit vulnerabilities to gain higher levels of access. The top source IPs, including 45.33.32.156 and 192.168.1.15, are likely the sources of these attacks and should be investigated further.<br><br>The system's SSH configuration should be reviewed immediately to ensure that it is properly secured, including implementing measures such as rate limiting and IP blocking to prevent further brute force attacks. The top source IPs should be blocked at the firewall level to prevent any further attacks from those locations. The system's logs should be further analyzed to determine if any of the failed SSH logins were successful, and if so, a full incident response should be initiated to determine the scope of the breach and contain any potential damage.</div>
+    </div>
+
+    <div class="footer">
+        Generated by AI-Driven Security Log Analysis and Threat Intelligence Engine
+    </div>
+</body>
+</html>

