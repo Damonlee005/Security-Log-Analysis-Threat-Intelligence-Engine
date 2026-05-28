@@ -1,42 +1,48 @@
 # AI-Driven Security Log Analysis and Threat Intelligence Engine
 
-Python | Groq LLaMA API | Jinja2 | JSON | HTML Reporting
+Python | Groq LLaMA API | JSON | HTML Reporting
 
 ---
 
-## Overview
+## Background
 
-This project started from a question I kept coming back to in my security coursework
-at the University of Tennessee. Log analysis is something every SOC analyst does
-manually every day — reading through failed logins, flagging suspicious IPs, looking
-for patterns that suggest something is wrong. I wanted to build something that
-automates that initial triage and turns raw log data into a readable threat assessment
-a human can actually act on.
+What drew me to this project was the rise in AI and how it is changing the way
+security work actually gets done. I wanted to test out how different AI models
+handle security threat assessments and whether the output would be something
+useful or just another formatted list that tells you nothing new.
 
-The tool ingests security event logs, runs behavioral analysis to detect indicators
-like brute force patterns, privilege escalation attempts, and suspicious process
-execution, then sends the findings to an AI model that generates a plain language
-threat assessment. The output is a structured HTML report that reads like something
-a junior analyst would produce after reviewing the logs.
+So I built the detection engine first. The behavioral analysis logic catches
+brute force patterns, privilege escalation attempts, and suspicious process
+execution from raw log data. Then I wired it into the Groq API to see what
+the model did with structured findings. The output ended up being more useful
+than I expected. It reads like a person wrote it rather than a generated
+template, which was the whole point.
+
+This is not trying to replace an analyst. It is trying to handle the first
+pass so the analyst can focus on what actually matters.
 
 ---
 
 ## What It Does
 
-Ingests security event logs in JSON format covering SSH authentication events,
-sudo usage, process execution, and privilege escalation attempts. Analyzes behavioral
-patterns to detect brute force activity by flagging source IPs with repeated failed
-logins, identifies privilege escalation and suspicious process execution, and
-classifies source IPs as internal or external. Sends structured findings to the
-Groq LLaMA API to generate a plain language threat assessment with risk level,
-key findings, and prioritized remediation steps. Produces a clean HTML threat
-intelligence report with severity scoring, event breakdowns, and IP classification.
+Generates realistic security event logs across five categories, runs behavioral
+analysis to detect attack patterns, sends structured findings to an AI model,
+and produces an HTML threat intelligence report with severity scoring, IP
+classification, and a plain language assessment.
 
 ---
 
-## Sample Output
+## Screenshots
 
-The tool detected the following across 72 security events:
+### Event Breakdown
+![Event Breakdown](screenshots/event_breakdown.png)
+
+### AI Generated Threat Assessment
+![Threat Assessment](screenshots/threat_assessment.png)
+
+---
+
+## Results
 
 | Metric | Value |
 |---|---|
@@ -45,16 +51,9 @@ The tool detected the following across 72 security events:
 | Failed login attempts | 42 |
 | Brute force detected | Yes |
 | Privilege escalation detected | Yes |
-| Suspicious process execution detected | Yes |
-| Overall risk level | High |
+| Suspicious process execution | Yes |
+| Risk level | High |
 
-Top suspicious source IPs: 45.33.32.156, 89.248.165.64, 198.20.69.74
-
-The full HTML threat report is available in reports/threat_report.html
-
----
-
-## Project Structure
 ---
 
 ## How to Run
@@ -75,27 +74,11 @@ open reports/threat_report.html
 
 ## Dataset
 
-The security event dataset is synthetically generated to simulate realistic Linux
-server log activity including normal SSH authentication, brute force attack patterns,
-privilege escalation attempts, and suspicious process execution. The generator
-produces labeled events with severity scoring across five categories. This approach
-is standard practice in security tool development and allows for controlled testing
-across known attack scenarios without requiring access to production systems.
+Security events are synthetically generated to simulate realistic Linux server
+activity across five labeled categories. Using synthetic data is standard
+practice for security tool development. You need controlled test cases to
+validate that detection logic works before pointing it at real systems.
 
 ---
 
-## AI Integration
-
-The tool uses the Groq API with the LLaMA 3.3 70B model to generate threat
-assessments from structured log findings. The prompt is engineered to produce
-plain language output that reads like analyst written prose rather than a
-templated response, with a focus on what the findings actually mean and what
-should be done about them.
-
----
-
-## Threat Report Preview
-
-Open reports/threat_report.html in your browser to view the full rendered report
-with risk scoring, detection summary, event breakdown, IP classification table,
-and the AI generated threat assessment.
+## Project Structure
