@@ -37,7 +37,7 @@ classification, and a plain language assessment.
 ### AI Generated Threat Assessment
 ![Event Breakdown](screenshots/event_breakdown.png)
 
-### AEvent Breakdown 
+### Event Breakdown 
 ![Threat Assessment](screenshots/threat_assessment.png)
 
 ---
