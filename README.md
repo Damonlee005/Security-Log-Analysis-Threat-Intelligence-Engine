@@ -92,3 +92,15 @@ Security-Log-Analysis-Threat-Intelligence-Engine/
 │   └── threat_report.html
 ├── screenshots/
 └── requirements.txt
+
+---
+
+## Future Work
+
+I would like to keep building on this and apply it to real world datasets as they
+become available. The part that interests me most is staying current with how AI
+driven assessments are evolving, specifically how AI is changing security workflows
+at every level of an organization, from entry level IT staff who are the first ones
+to see something wrong, all the way up to the people making decisions about
+organizational risk. That gap between what the tool catches and what a human
+needs to act on it is where I think the most interesting work is.
