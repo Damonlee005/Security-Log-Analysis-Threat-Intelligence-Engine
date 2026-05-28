@@ -34,10 +34,10 @@ classification, and a plain language assessment.
 
 ## Screenshots
 
-### Event Breakdown
+### AI Generated Threat Assessment
 ![Event Breakdown](screenshots/event_breakdown.png)
 
-### AI Generated Threat Assessment
+### AEvent Breakdown 
 ![Threat Assessment](screenshots/threat_assessment.png)
 
 ---
