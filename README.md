@@ -16,10 +16,7 @@ brute force patterns, privilege escalation attempts, and suspicious process
 execution from raw log data. Then I wired it into the Groq API to see what
 the model did with structured findings. The output ended up being more useful
 than I expected. It reads like a person wrote it rather than a generated
-template, which was the whole point.
-
-This is not trying to replace an analyst. It is trying to handle the first
-pass so the analyst can focus on what actually matters.
+template.
 
 ---
 
